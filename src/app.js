@@ -8,7 +8,9 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   // window.onload = () => {
   //write your code here
-  document.querySelector("#excuse").innerHTML = generatedExcuse();
+  document.querySelector("#button").addEventListener("click", function() {
+    document.querySelector("#excuse").innerHTML = generatedExcuse();
+  });
 };
 
 // let generatedExcuse = () => {
